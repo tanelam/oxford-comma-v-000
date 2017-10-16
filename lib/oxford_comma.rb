@@ -5,7 +5,7 @@ def oxford_comma(array)
     return array.insert(-2, " and ").join
   elsif array.length >= 3
     comma = array.pop
-    return .join(", ") + " and " + comma
+    return comma.join(", ") + " and " + array[-1]
 
 
   end
